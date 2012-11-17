@@ -1,5 +1,7 @@
 FullstackAlbum::Application.routes.draw do
-  resources :albums
+  scope "api" do
+    resources :albums
+  end
 
   root to: "albums#index"
 end
