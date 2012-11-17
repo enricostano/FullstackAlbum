@@ -26,6 +26,7 @@ gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly', '~>0.9.12'
 
 group :test, :development do
+  gem 'sqlite3'
   gem "rspec-rails", "~> 2.0"
   gem 'factory_girl_rails'
 end
