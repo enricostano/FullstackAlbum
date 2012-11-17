@@ -30,6 +30,8 @@ group :test, :development do
   gem 'factory_girl_rails'
 end
 
+gem 'therubyracer'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
