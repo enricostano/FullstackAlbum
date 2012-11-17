@@ -33,6 +33,8 @@ end
 
 gem 'therubyracer'
 
+gem 'backbone-on-rails'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
