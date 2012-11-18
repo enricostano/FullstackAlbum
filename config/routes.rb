@@ -4,4 +4,5 @@ FullstackAlbum::Application.routes.draw do
   end
 
   root to: "albums#index"
+  match '*path', to: 'albums#index'
 end
