@@ -2,6 +2,7 @@
 
 <form id="new_album">
   <input type="text" name="name" id="new_album_name">
+  <input type="file" name="cover_image" id="new_album_cover_image" enctype="multipart/form-data">
   <input type="submit" value="Add">
 </form>
 

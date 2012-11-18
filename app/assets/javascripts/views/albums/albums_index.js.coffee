@@ -20,7 +20,7 @@ class FullstackAlbum.Views.AlbumsIndex extends Backbone.View
 
   createAlbum: (event) ->
     event.preventDefault()
-    attributes = name: $('#new_album_name').val()
+    attributes = {name: $('#new_album_name').val(), cover_image: $('#new_album_cover_image')}
     @collection.create(attributes, {
       wait: true
       success: -> $('#new_album')[0].reset()

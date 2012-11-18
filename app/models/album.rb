@@ -1,5 +1,5 @@
 class Album < ActiveRecord::Base
-  attr_accessible :cover_image_uid, :name
+  attr_accessible :cover_image, :name
 
   validates_presence_of :name
 
