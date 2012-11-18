@@ -3,7 +3,9 @@ window.FullstackAlbum =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new FullstackAlbum.Routers.Albums
+    Backbone.history.start(pushState: true)
 
 $(document).ready ->
   FullstackAlbum.initialize()
