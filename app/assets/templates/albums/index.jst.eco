@@ -1,8 +1,8 @@
 <h1>Music albums</h1>
 
-<form id="new_album">
+<form id="new_album" enctype="multipart/form-data">
   <input type="text" name="name" id="new_album_name">
-  <input type="file" name="cover_image" id="new_album_cover_image" enctype="multipart/form-data">
+  <input type="file" name="cover_image" id="new_album_cover_image" >
   <input type="submit" value="Add">
 </form>
 
