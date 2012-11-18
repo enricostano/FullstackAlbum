@@ -6,16 +6,18 @@ class FullstackAlbum.Routers.Albums extends Backbone.Router
 
   initialize: ->
     @collection = new FullstackAlbum.Collections.Albums()
-    @collection.fetch()
+    @collection.reset($('#container').data 'albums')
 
   index: ->
     view = new FullstackAlbum.Views.AlbumsIndex(collection: @collection)
     $('#container').html(view.render().el)
 
   show: (id) ->
-    view = new FullstackAlbum.Views.AlbumsShow(collection: @collection, id: id)
+    album = @collection.get(id)
+    view = new FullstackAlbum.Views.AlbumsShow(model: album)
     $('#container').html(view.render().el)
 
   edit: (id) ->
-    view = new FullstackAlbum.Views.AlbumsEdit(collection: @collection, id: id)
+    album = @collection.get(id)
+    view = new FullstackAlbum.Views.AlbumsEdit(model: album)
     $('#container').html(view.render().el)
