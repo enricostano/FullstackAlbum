@@ -13,7 +13,8 @@ class FullstackAlbum.Views.AlbumsEdit extends Backbone.View
     event.preventDefault()
     event.stopPropagation()
     name = $('#name').val()
-    @model.save({name: name},
+    cover_image = $('#cover_image').val()
+    @model.save({name: name, cover_image: cover_image},
       success: (album) =>
         @model = album
-        window.location.hash = "albums/#{@model.id}")
+        window.location = "/")
