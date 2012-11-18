@@ -1,0 +1,14 @@
+<h1>Edit <%= @album.get('name') %></h1>
+
+<form id="edit_album" name="album">
+  <div class="field">
+    <label for="name"> Name:</label>
+      <input type="text" name="name" id="name" value="<%= @album.get('name') %>" >
+  </div>
+
+  <div class="actions">
+    <input type="submit" value="Update album" />
+  </div>
+</form>
+
+<a href="/">Album index</a>
