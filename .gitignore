@@ -16,3 +16,6 @@
 
 # Ignore Vim swap files
 .*.sw[a-z]
+
+#Ignore Dragonfly uploads
+/public/system/dragonfly
