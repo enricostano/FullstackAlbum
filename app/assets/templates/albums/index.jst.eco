@@ -1,6 +1,6 @@
 <h1>Music albums</h1>
 
-<form id="new_album" enctype="multipart/form-data">
+<form id="new_album" method="post" enctype="multipart/form-data" data-remote="true" data-type="json">
   <input type="text" name="name" id="new_album_name">
   <input type="file" name="cover_image" id="new_album_cover_image" >
   <input type="submit" value="Add">
